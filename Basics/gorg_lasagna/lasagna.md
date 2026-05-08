@@ -1,3 +1,7 @@
+# Instructions
+
+Write code to help cook a gorgeous lasagna from your favorite cookbook.
+
 ## Task 1
 
 ### Define expected bake time in minutes as a constant
