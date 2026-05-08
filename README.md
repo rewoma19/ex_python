@@ -15,3 +15,11 @@
 - [Instructions](/Bools/ghost_gobble/arcade_game.md)
 
 - [Solution](/Bools/ghost_gobble/arcade_game.py)
+
+## Numbers
+
+### Currency Exchange
+
+- [Instructions](/Numbers/currency_exchange/exchange.md)
+
+- [Solution](/Numbers/currency_exchange/exchange.py)
