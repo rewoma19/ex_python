@@ -24,3 +24,30 @@ def value_of_card(card):
         card_val = int(card)
 
     return card_val
+
+def higher_card(card_one, card_two):
+    """Determine which card has a higher value in the hand.
+
+    Parameters:
+        card_one (str): First card dealt in the hand.  See below for values.
+        card_two (str): Second card dealt in the hand. See below for values.
+
+        1.  'J', 'Q', or 'K' (otherwise known as "face cards") = 10
+        2.  'A' (ace card) = 1
+        3.  '2' - '10' = numerical value.
+
+    Returns:
+        str or tuple: The resulting Tuple contains both cards if they are of equal value.
+    """
+
+    card_one_val = value_of_card(card_one)
+    card_two_val = value_of_card(card_two)
+
+    higher_card = card_one
+
+    if card_one_val == card_two_val:
+        higher_card = (card_one, card_two)
+    elif card_one_val < card_two_val:
+        higher_card = card_two
+
+    return higher_card

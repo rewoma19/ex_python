@@ -20,3 +20,27 @@ Define the **value_of_card(<card>)** function with parameter **card**. The funct
 
     value_of_card('A')
     1
+
+## Task 2
+
+### Determine which card has a higher value
+
+Define the **higher_card(<card_one>, <card_two>)** function having parameters **card_one** and **card_two**. For scoring purposes, the value of **J**, **Q** or **K** is 10. The function should return which card has the higher value for scoring. If both cards have an equal value, return both. Returning both cards can be done by using a comma in the **return** statement:
+
+    # Using a comma in a return creates a Tuple.  Tuples will be covered in a later exercise.
+    >>> def returning_two_values(value_one, value_two):
+            return value_one, value_two
+
+    >>> returning_two_values('K', '3')
+    ('K', '3')
+
+An ace can take on multiple values, so we will fix **A** cards to a value of 1 for this task.
+
+    higher_card('K', '10')
+    ('K', '10')
+
+    higher_card('4', '6')
+    '6'
+
+    higher_card('K', 'A')
+    'K'
