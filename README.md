@@ -31,3 +31,11 @@
 - [Instructions](/Conditionals/meltdown_mig/conditionals.md)
 
 - [Solution](/Conditionals/meltdown_mig/conditionals.py)
+
+## Comparisons
+
+### Black Jack
+
+- [Instructions](/Comparisons/black_jack/black_jack.md)
+
+- [Solution](/Comparisons/black_jack/black_jack.py)
