@@ -23,3 +23,11 @@
 - [Instructions](/Numbers/currency_exchange/exchange.md)
 
 - [Solution](/Numbers/currency_exchange/exchange.py)
+
+## Conditionals
+
+### Meltdown Mitigation
+
+- [Instructions](/Conditionals/meltdown_mig/conditionals.md)
+
+- [Solution](/Conditionals/meltdown_mig/conditionals.py)
