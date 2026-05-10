@@ -67,7 +67,7 @@ Define the **value_of_ace(<card_one>, <card_two>)** function with parameters **c
 
 If a player is dealt an ace (A) and a ten-card (10, K, Q, or J) as their first two cards, then the player has a score of 21. This is known as a blackjack hand.
 
-Define the **is_blackjack(<card_one>, <card_two>)** function with parameters **card_one** and **card_two**, which are a pair of cards. Determine if the two-card hand is a blackjack, and return the boolean True if it is, False otherwise.
+Define the **is_blackjack(<card_one>, <card_two>)** function with parameters **card_one** and **card_two**, which are a pair of cards. Determine if the two-card hand is a blackjack, and return the boolean **True** if it is, **False** otherwise.
 
 **Note** : The score calculation can be done in many ways. But if possible, we'd like you to check if there is an ace and a ten-card in the hand (or at a certain position), as opposed to summing the hand values.
 
@@ -75,4 +75,18 @@ Define the **is_blackjack(<card_one>, <card_two>)** function with parameters **c
     True
 
     is_blackjack('10', '9')
+    False
+
+## Task 5
+
+### Splitting pairs
+
+If the first two cards in a hand are of the same value (for example, two sixes or a Q and K), a player may choose to treat them as two separate hands. This is known as "splitting pairs".
+
+Define the **can_split_pairs(<card_one>, <card_two>)** function with parameters **card_one** and **card_two**, which are a pair of cards. Determine if this two-card hand can be split into two pairs. If the hand can be split, return the boolean **True** otherwise, return **False**
+
+    can_split_pairs('Q', 'K')
+    True
+
+    can_split_pairs('10', 'A')
     False
