@@ -76,3 +76,26 @@ def value_of_ace(card_one, card_two):
           ace_value = 11
 
     return ace_value
+
+def is_blackjack(card_one, card_two):
+    """Determine if the hand is a 'natural' or 'blackjack'.
+
+    Parameters:
+        card_one (str): First card dealt in the hand.  See below for values.
+        card_two (str): Second card dealt in the hand. See below for values.
+
+        1.  'J', 'Q', or 'K' (otherwise known as "face cards") = 10
+        2.  'A' (ace card) = 11 (if already in hand)
+        3.  '2' - '10' = numerical value.
+
+    Returns:
+        bool: Is the hand is a blackjack (two cards worth 21).
+    """
+    has_blackjack = False
+
+    hand_of_cards = (card_one, card_two)
+
+    if ("A" in hand_of_cards) and (value_of_card(card_one) == 10 or value_of_card(card_two) == 10):
+        has_blackjack = True
+
+    return has_blackjack
