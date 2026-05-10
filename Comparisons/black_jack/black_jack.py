@@ -51,3 +51,28 @@ def higher_card(card_one, card_two):
         higher_card = card_two
 
     return higher_card
+
+def value_of_ace(card_one, card_two):
+    """Calculate the most advantageous value for an upcoming ace card.
+
+    Parameters:
+        card_one (str): First card dealt in the hand.  See below for values.
+        card_two (str): Second card dealt in the hand. See below for values.
+
+        1.  'J', 'Q', or 'K' (otherwise known as "face cards") = 10
+        2.  'A' (ace card) = 11 (if already in hand)
+        3.  '2' - '10' = numerical value.
+
+    Returns:
+        int: Either 1 or 11, which is the value of the upcoming ace card.
+    """
+
+    ace_value = 1
+
+    total_val_before_ace = value_of_card(card_one) + value_of_card(card_two)
+
+    if card_one != "A" and card_two != "A":
+      if total_val_before_ace <= 10:
+          ace_value = 11
+
+    return ace_value

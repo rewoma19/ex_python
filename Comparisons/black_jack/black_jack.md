@@ -44,3 +44,19 @@ An ace can take on multiple values, so we will fix **A** cards to a value of 1 f
 
     higher_card('K', 'A')
     'K'
+
+## Task 3
+
+### Calculate the value of an ace
+
+As mentioned before, an ace can be worth either 1 or 11 points. Players try to get as close as possible to a score of 21, without going over 21 (going "bust").
+
+Define the **value_of_ace(<card_one>, <card_two>)** function with parameters **card_one** and **card_two**, which are a pair of cards already in the hand before getting an ace card. Your function will have to decide if the upcoming ace will get a value of 1 or a value of 11, and return that value. Remember: the value of the hand with the ace needs to be as high as possible without going over 21.
+
+**Hint**: if we already have an ace in hand, then the value for the upcoming ace would be 1.
+
+    value_of_ace('6', 'K')
+    1
+
+    value_of_ace('7', '3')
+    11
