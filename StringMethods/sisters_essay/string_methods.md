@@ -21,3 +21,12 @@ You want to make sure that the punctuation in the paper is perfect. Implement th
 
     check_sentence_ending("I like to hike, bake, and read.")
     True
+
+## Task 3
+
+### Clean up spacing
+
+To make the paper look professional, unnecessary spacing needs to be removed. Implement the function **clean_up_spacing()** that takes **sentence** as a parameter. The function should remove extra whitespace at both the beginning and the end of the sentence, returning a new, updated sentence **str**.
+
+    clean_up_spacing(" I like to go on hikes with my dog. ")
+    "I like to go on hikes with my dog."
