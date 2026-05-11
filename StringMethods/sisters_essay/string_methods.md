@@ -12,3 +12,12 @@ Any good paper needs a properly formatted title. Implement the function **capita
 
     capitalize_title("my hobbies")
     "My Hobbies"
+
+## Task 2
+
+### Check if each sentence ends with a period
+
+You want to make sure that the punctuation in the paper is perfect. Implement the function **check_sentence_ending()** that takes **sentence** as a parameter. This function should return a **bool**.
+
+    check_sentence_ending("I like to hike, bake, and read.")
+    True
