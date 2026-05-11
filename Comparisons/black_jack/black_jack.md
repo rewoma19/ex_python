@@ -90,3 +90,17 @@ Define the **can_split_pairs(<card_one>, <card_two>)** function with parameters 
 
     can_split_pairs('10', 'A')
     False
+
+## Task 6
+
+### Doubling down
+
+When the original two cards dealt total 9, 10, or 11 points, a player can place an additional bet equal to their original bet. This is known as "doubling down".
+
+Define the **can_double_down(<card_one>, <card_two>)** function with parameters **card_one** and **card_two**, which are a pair of cards. Determine if the two-card hand can be "doubled down", and return the boolean **True** if it can, _8_ otherwise.
+
+    can_double_down('A', '9')
+    True
+
+    can_double_down('10', '2')
+    False

@@ -43,14 +43,14 @@ def higher_card(card_one, card_two):
     card_one_val = value_of_card(card_one)
     card_two_val = value_of_card(card_two)
 
-    higher_card = card_one
+    larger_card = card_one
 
     if card_one_val == card_two_val:
-        higher_card = (card_one, card_two)
+        larger_card = (card_one, card_two)
     elif card_one_val < card_two_val:
-        higher_card = card_two
+        larger_card = card_two
 
-    return higher_card
+    return larger_card
 
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for an upcoming ace card.
@@ -117,3 +117,22 @@ def can_split_pairs(card_one, card_two):
         can_split = True
 
     return can_split
+
+def can_double_down(card_one, card_two):
+    """Determine if a blackjack player can place a double down bet.
+
+    Parameters:
+        card_one (str): First card in the hand.
+        card_two (str): Second card in the hand.
+
+    Returns:
+        bool: Can the hand can be doubled down? (i.e. totals 9, 10 or 11 points).
+    """
+    double_down = False
+
+    sum_of_cards = value_of_card(card_one) + value_of_card(card_two)
+
+    if 9 <= sum_of_cards <= 11:
+        double_down = True
+
+    return double_down
