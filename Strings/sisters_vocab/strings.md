@@ -17,3 +17,27 @@ Implement the **add_prefix_un(<word>)** function that takes **word** as a parame
 
     add_prefix_un("manageable")
     'unmanageable'
+
+## Task 2
+
+### Add prefixes to word groups
+
+There are four more common prefixes that your sister's class is studying: **en** (meaning to 'put into' or 'cover with'), **pre** (meaning 'before' or 'forward'), **auto** (meaning 'self' or 'same'), and **inter** (meaning 'between' or 'among').
+
+In this exercise, the class is creating groups of vocabulary words using these prefixes, so they can be studied together. Each prefix comes in a list with common words it's used with. The students need to apply the prefix and produce a string that shows the prefix applied to all of the words.
+
+Implement the **make_word_groups(<vocab_words>)** function that takes a **vocab_words** as a parameter in the following form: **[<prefix>, <word_1>, <word_2> .... <word_n>]**, and returns a string with the prefix applied to each word that looks like: **'<prefix> :: <prefix><word_1> :: <prefix><word_2> :: <prefix><word_n>'**.
+
+Creating a **for** or **while** loop to process the input is not needed here. Think carefully about which string methods (and delimiters) you could use instead.
+
+    make_word_groups(['en', 'close', 'joy', 'lighten'])
+    'en :: enclose :: enjoy :: enlighten'
+
+    make_word_groups(['pre', 'serve', 'dispose', 'position'])
+    'pre :: preserve :: predispose :: preposition'
+
+    make_word_groups(['auto', 'didactic', 'graph', 'mate'])
+    'auto :: autodidactic :: autograph :: automate'
+
+    make_word_groups(['inter', 'twine', 'connected', 'dependent'])
+    'inter :: intertwine :: interconnected :: interdependent'
