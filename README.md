@@ -47,3 +47,11 @@
 - [Instructions](/Strings/sisters_vocab/strings.md)
 
 - [Solution](/Strings/sisters_vocab/strings.py)
+
+## String Methods
+
+### Litte Sister's Essay
+
+- [Instructions](/StringMethods/sisters_essay/string_methods.md)
+
+- [Solution](/StringMethods/sisters_essay/string_methods.py)
