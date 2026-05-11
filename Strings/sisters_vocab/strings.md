@@ -41,3 +41,17 @@ Creating a **for** or **while** loop to process the input is not needed here. Th
 
     make_word_groups(['inter', 'twine', 'connected', 'dependent'])
     'inter :: intertwine :: interconnected :: interdependent'
+
+## Task 3
+
+### Remove a suffix from a word
+
+**ness** is a common suffix that means 'state of being'. In this activity, your sister needs to find the original root word by removing the **ness** suffix. But of course there are pesky spelling rules: If the root word originally ended in a consonant followed by a 'y', then the 'y' was changed to 'i'. Removing 'ness' needs to restore the 'y' in those root words. e.g. **happiness** --> **happi** --> **happy**.
+
+Implement the **remove_suffix_ness(<word>)** function that takes in a **word**, and returns the root word without the ness suffix.
+
+    remove_suffix_ness("heaviness")
+    'heavy'
+
+    remove_suffix_ness("sadness")
+    'sad'
