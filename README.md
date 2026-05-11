@@ -39,3 +39,11 @@
 - [Instructions](/Comparisons/black_jack/black_jack.md)
 
 - [Solution](/Comparisons/black_jack/black_jack.py)
+
+## Strings
+
+### Sister's Vocabulary
+
+- [Instructions](/Strings/sisters_vocab/strings.md)
+
+- [Solution](/Strings/sisters_vocab/strings.py)
