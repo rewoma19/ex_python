@@ -59,3 +59,26 @@ def card_average(hand):
     """
 
     return (sum(hand) / len(hand))
+
+def approx_average_is_average(hand):
+    """Return if the (average of first and last card values) OR ('middle' card) == calculated average.
+
+    Parameters:
+        hand (list): The cards in the hand.
+
+    Returns:
+        bool: Does one of the approximate averages equal the `true average`?
+    """
+
+    actual_avg = card_average(hand)
+    avg_first_last = (hand[0] + hand[-1]) / 2
+    middle_index = len(hand) // 2
+    avg_median = hand[middle_index]
+
+    if (avg_first_last == actual_avg) or (avg_median == actual_avg):
+        return True
+    
+    if (avg_first_last == actual_avg) and (avg_median == actual_avg):
+        return True
+    
+    return False

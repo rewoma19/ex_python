@@ -48,3 +48,30 @@ Implement a function **card_average(<hand>)** that will return the average value
 
     card_average([5, 6, 7])
     6.0
+
+## Task 5
+
+### Alternate Averages
+
+In Black Joe, speed is important. Elyse is going to try and find a faster way of finding the average.
+
+She has thought of two ways of getting an average-like number:
+
+- Take the average of the first and last number in the hand.
+
+- Using the median (middle card) of the hand.
+
+Implement the function **approx_average_is_average(<hand>)**, given **hand**, a list containing the values of the cards in your hand.
+
+Return **True** if either one **or** both of the, above named, strategies result in a number equal to the actual average.
+
+**Note**: The length of all hands are odd, to make finding a median easier.
+
+    approx_average_is_average([1, 2, 3])
+    True
+
+    approx_average_is_average([2, 3, 4, 8, 8])
+    True
+
+    approx_average_is_average([1, 2, 3, 5, 9])
+    False
