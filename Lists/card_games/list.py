@@ -35,3 +35,15 @@ def concatenate_rounds(rounds_1, rounds_2):
     rounds_1.extend(rounds_2)
     return rounds_1
 
+def list_contains_round(rounds, number):
+    """Check if the list of rounds contains the specified number.
+
+    Parameters:
+        rounds  (list): The rounds played.
+        number (int): The round number.
+
+    Returns:
+        bool: Was the round played?
+    """
+
+    return (number in rounds)

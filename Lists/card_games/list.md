@@ -23,3 +23,17 @@ Implement a function **concatenate_rounds(<rounds_1>, <rounds_2>)** that takes t
 
     concatenate_rounds([27, 28, 29], [35, 36])
     [27, 28, 29, 35, 36]
+
+## Task 3
+
+### Finding Prior Rounds
+
+Talking about some of the prior Poker rounds, another player remarks how similarly two of them played out. Elyse is not sure if she played those rounds or not.
+
+Implement a function **list_contains_round(<rounds>, <round_number>)** that takes two arguments, a list of rounds played and a round number. The function will return **True** if the round is in the list of rounds played, **False** if not:
+
+    list_contains_round([27, 28, 29, 35, 36], 29)
+    True
+
+    list_contains_round([27, 28, 29, 35, 36], 30)
+    False
