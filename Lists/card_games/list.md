@@ -75,3 +75,17 @@ Return **True** if either one **or** both of the, above named, strategies result
 
     approx_average_is_average([1, 2, 3, 5, 9])
     False
+
+## Task 6
+
+### More Averaging Techniques
+
+Intrigued by the results of her averaging experiment, Elyse is wondering if taking the average of the cards at the even positions versus the average of the cards at the odd positions would give the same results. Time for another test function!
+
+Implement a function **average_even_is_average_odd(<hand>)** that returns a Boolean indicating if the average of the cards at even indexes is the same as the average of the cards at odd indexes.
+
+    average_even_is_average_odd([1, 2, 3])
+    True
+
+    average_even_is_average_odd([1, 2, 3, 4])
+    False

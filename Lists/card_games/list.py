@@ -82,3 +82,27 @@ def approx_average_is_average(hand):
         return True
     
     return False
+
+def average_even_is_average_odd(hand):
+    """Return if the (average of even indexed card values) == (average of odd indexed card values).
+
+    Parameters:
+        hand (list): The cards in the hand.
+
+    Returns:
+        bool: Are the even and odd averages equal?
+    """
+
+    even_indexed_list = []
+    odd_indexed_list = []
+
+    for index, card in enumerate(hand):
+        if (index % 2) == 0:
+            even_indexed_list.append(card)
+        else:
+            odd_indexed_list.append(card)
+
+    even_avg = sum(even_indexed_list) / len(even_indexed_list)
+    odd_avg = sum(odd_indexed_list) / len(odd_indexed_list)
+
+    return even_avg == odd_avg
