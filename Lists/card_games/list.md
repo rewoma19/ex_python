@@ -12,3 +12,14 @@ Implement a function **get_rounds(<round_number>)** that takes the current round
 
     get_rounds(27)
     [27, 28, 29]
+
+## Task 2
+
+### Keeping all Rounds in the Same Place
+
+Elyse played a few rounds at the first table, then took a break and played some more rounds at a second table ... but ended up with a different list for each table! She wants to put the two lists together, so she can track all of the poker rounds in the same place.
+
+Implement a function **concatenate_rounds(<rounds_1>, <rounds_2>)** that takes two lists and returns a single **list** consisting of all the rounds in the first **list**, followed by all the rounds in the second **list**:
+
+    concatenate_rounds([27, 28, 29], [35, 36])
+    [27, 28, 29, 35, 36]
