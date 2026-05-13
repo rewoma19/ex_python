@@ -55,3 +55,11 @@
 - [Instructions](/StringMethods/sisters_essay/string_methods.md)
 
 - [Solution](/StringMethods/sisters_essay/string_methods.py)
+
+## Lists
+
+### Card Games
+
+- [Instructions](/Lists/card_games/list.md)
+
+- [Solution](/Lists/card_games/list.py)

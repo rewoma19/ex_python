@@ -1,0 +1,22 @@
+"""Functions for tracking poker hands and assorted card tasks.
+"""
+
+
+def get_rounds(number):
+    """Create a list containing the current and next two round numbers.
+
+    Parameters:
+        number (int):  The current round number.
+
+    Returns:
+        list: The current round number and the two that follow.
+    """
+
+    nums_list = [number] * 3
+
+    for i in range(len(nums_list)):
+        nums_list[i] += i
+
+    return nums_list
+
+get_rounds(27)
