@@ -14,12 +14,12 @@ def get_rounds(number):
 
     nums_list = [number] * 3
 
-    for i in range(len(nums_list)):
-        nums_list[i] += i
+    for index, num in enumerate(nums_list):
+        nums_list[index] += index
 
     return nums_list
 
-get_rounds(27)
+print(get_rounds(27))
 
 def concatenate_rounds(rounds_1, rounds_2):
     """Concatenate two lists of round numbers.
@@ -35,6 +35,8 @@ def concatenate_rounds(rounds_1, rounds_2):
     rounds_1.extend(rounds_2)
     return rounds_1
 
+print(concatenate_rounds([27, 28, 29], [35, 36]))
+
 def list_contains_round(rounds, number):
     """Check if the list of rounds contains the specified number.
 
@@ -46,7 +48,11 @@ def list_contains_round(rounds, number):
         bool: Was the round played?
     """
 
-    return (number in rounds)
+    contains_round = number in rounds
+    return contains_round
+
+print(list_contains_round([27, 28, 29, 35, 36], 29))
+print(list_contains_round([27, 28, 29, 35, 36], 30))
 
 def card_average(hand):
     """Calculate and returns the average card value from the list.
@@ -58,7 +64,10 @@ def card_average(hand):
         float: The average value of the cards in the hand.
     """
 
-    return (sum(hand) / len(hand))
+    card_avg = sum(hand) / len(hand)
+    return card_avg
+
+print(card_average([5, 6, 7]))
 
 def approx_average_is_average(hand):
     """Return if the (average of first and last card values) OR ('middle' card) == calculated average.
@@ -75,13 +84,11 @@ def approx_average_is_average(hand):
     middle_index = len(hand) // 2
     avg_median = hand[middle_index]
 
-    if (avg_first_last == actual_avg) or (avg_median == actual_avg):
-        return True
-    
-    if (avg_first_last == actual_avg) and (avg_median == actual_avg):
-        return True
-    
-    return False
+    return actual_avg in (avg_first_last, avg_median)
+
+print(approx_average_is_average([1, 2, 3]))
+print(approx_average_is_average([2, 3, 4, 8, 8]))
+print(approx_average_is_average([1, 2, 3, 5, 9]))
 
 def average_even_is_average_odd(hand):
     """Return if the (average of even indexed card values) == (average of odd indexed card values).
@@ -106,3 +113,25 @@ def average_even_is_average_odd(hand):
     odd_avg = sum(odd_indexed_list) / len(odd_indexed_list)
 
     return even_avg == odd_avg
+
+print(average_even_is_average_odd([1, 2, 3]))
+print(average_even_is_average_odd([1, 2, 3, 4]))
+
+
+def maybe_double_last(hand):
+    """Multiply a Jack card value in the last index position by 2.
+
+    Parameters:
+        hand (list): The cards in the hand.
+
+    Returns:
+        list: The hand with Jacks (if present) value doubled.
+    """
+
+    if hand[-1] == 11:
+        hand[-1] *= 2
+
+    return hand
+
+print(maybe_double_last([5, 9, 11]))
+print(maybe_double_last([5, 9, 10]))

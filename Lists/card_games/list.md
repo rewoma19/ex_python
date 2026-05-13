@@ -89,3 +89,19 @@ Implement a function **average_even_is_average_odd(<hand>)** that returns a Bool
 
     average_even_is_average_odd([1, 2, 3, 4])
     False
+
+## Task 7
+
+### Bonus Round Rules
+
+Every 11th hand in Black Joe is a bonus hand with a bonus rule: if the last card you draw is a Jack, you double its value.
+
+Implement a function **maybe_double_last(<hand>)** that takes a hand and checks if the last card is a Jack (11). If the last card is a Jack (11), double its value before returning the hand.
+
+    hand = [5, 9, 11]
+    maybe_double_last(hand)
+    [5, 9, 22]
+
+    hand = [5, 9, 10]
+    maybe_double_last(hand)
+    [5, 9, 10]
