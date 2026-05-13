@@ -47,3 +47,15 @@ def list_contains_round(rounds, number):
     """
 
     return (number in rounds)
+
+def card_average(hand):
+    """Calculate and returns the average card value from the list.
+
+    Parameters:
+        hand (list): The cards in the hand.
+
+    Returns:
+        float: The average value of the cards in the hand.
+    """
+
+    return (sum(hand) / len(hand))

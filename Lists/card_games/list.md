@@ -37,3 +37,14 @@ Implement a function **list_contains_round(<rounds>, <round_number>)** that take
 
     list_contains_round([27, 28, 29, 35, 36], 30)
     False
+
+## Task 4
+
+### Averaging Card Values
+
+Elyse wants to try out a new game called Black Joe. It's similar to Black Jack - where your goal is to have the cards in your hand add up to a target value - but in Black Joe the goal is to get the average of the card values to be 7. The average can be found by summing up all the card values and then dividing that sum by the number of cards in the hand.
+
+Implement a function **card_average(<hand>)** that will return the average value of a hand of Black Joe.
+
+    card_average([5, 6, 7])
+    6.0
