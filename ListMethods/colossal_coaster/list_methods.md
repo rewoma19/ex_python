@@ -45,3 +45,21 @@ Remember: Indexing starts at 0 from the left, and -1 from the right.
     > > > find_my_friend(queue=["Natasha", "Steve", "T'challa", "Wanda", "Rocket"], friend_name="Steve")
     > > > ...
     > > > 1
+
+## Task 3
+
+### Can I please join them?
+
+Now that their friends have been found (in task #2 above), the late arriver would like to join them at their place in the queue. Define the **add_me_with_my_friends()** function that takes 3 parameters queue, index, and person_name.
+
+1. **<queue>** is the **list** of people standing in the queue.
+
+2. **<index>** is the position at which the new person should be added.
+
+3. **<person_name>** is the name of the person to add at the index position.
+
+Return the queue updated with the late arrivals name.
+
+    > > > add_me_with_my_friends(queue=["Natasha", "Steve", "T'challa", "Wanda", "Rocket"], index=1, person_name="Bucky")
+    > > > ...
+    > > > ["Natasha", "Bucky", "Steve", "T'challa", "Wanda", "Rocket"]
