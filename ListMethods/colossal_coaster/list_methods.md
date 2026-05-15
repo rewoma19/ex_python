@@ -111,3 +111,15 @@ You should update the **list** and also **return** the name of the person who wa
     > > > remove_the_last_person(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"])
     > > > ...
     > > > 'Rocket'
+
+## Task 7
+
+### Sort the Queue List
+
+For administrative purposes, you need to get all the names in a given queue in alphabetical order.
+
+Define the **sorted_names()** function that takes 1 argument, **queue**, (the **list** of people standing in the queue), and returns a **sorted** copy of the **list**.
+
+    >>> sorted_names(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"])
+    ...
+    ['Eltran', 'Natasha', 'Natasha', 'Rocket', 'Steve']
