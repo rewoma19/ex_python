@@ -99,3 +99,15 @@ Return the number of occurrences of person_name, as an int.
     >>> how_many_namefellows(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"], person_name="Natasha")
     ...
     2
+
+## Task 6
+
+### Remove the last person
+
+Sadly, it's overcrowded at the park today and you need to remove the last person in the normal line (you will give them a voucher to come back in the fast-track on another day). You will have to define the function **remove_the_last_person()** that takes 1 parameter **queue**, which is the list of people standing in the queue.
+
+You should update the **list** and also **return** the name of the person who was removed, so you can write them a voucher.
+
+    > > > remove_the_last_person(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"])
+    > > > ...
+    > > > 'Rocket'

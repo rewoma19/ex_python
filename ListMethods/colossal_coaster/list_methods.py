@@ -80,3 +80,15 @@ def how_many_namefellows(queue, person_name):
     """
 
     return queue.count(person_name)
+
+def remove_the_last_person(queue):
+    """Remove the person in the last index from the queue and return their name.
+
+    Parameters:
+        queue (list): The names in the queue.
+
+    Returns:
+        str: The name that has been removed from the end of the queue.
+    """
+
+    return queue.pop()
