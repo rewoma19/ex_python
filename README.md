@@ -63,3 +63,11 @@
 - [Instructions](/Lists/card_games/list.md)
 
 - [Solution](/Lists/card_games/list.py)
+
+## List Methods
+
+### Colossal Coaster
+
+- [Instructions](/ListMethods/colossal_coaster/list_methods.md)
+
+- [Solution](/ListMethods/colossal_coaster/list_methods.py)
