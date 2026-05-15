@@ -81,3 +81,21 @@ Return the queue updated without the mean person's name.
     >>> remove_the_mean_person(queue=["Natasha", "Steve", "Eltran", "Wanda", "Rocket"], person_name="Eltran")
     ...
     ["Natasha", "Steve", "Wanda", "Rocket"]
+
+## Task 5
+
+### Namefellows
+
+You may not have seen two unrelated people who look exactly the same, but you have definitely seen unrelated people with the exact same name (namefellows)! Today, it looks like there are a lot of them in attendance. You want to know how many times a particular name occurs in the queue.
+
+Define the **how_many_namefellows()** function that takes 2 parameters **queue** and **person_name**.
+
+1. **<queue>** is the list of people standing in the queue.
+
+2. **<person_name>** is the name you think might occur more than once in the queue.
+
+Return the number of occurrences of person_name, as an int.
+
+    >>> how_many_namefellows(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"], person_name="Natasha")
+    ...
+    2
