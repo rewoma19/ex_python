@@ -54,3 +54,29 @@ def above_threshold(student_scores, threshold):
             the_best.append(score)
 
     return the_best
+
+def letter_grades(highest):
+    """Create a list of grade thresholds based on the provided highest grade.
+
+    Parameters:
+        highest: int - value of the highest exam score.
+
+    Returns:
+        list[int]: Lower threshold scores for each D-A letter grade interval.
+
+        For example, where the highest score is 100, and failing is <= 40,
+        The result would be [41, 56, 71, 86]:
+            41 <= "D" <= 55
+            56 <= "C" <= 70
+            71 <= "B" <= 85
+            86 <= "A" <= 100
+    """
+
+    grades = []
+    interval = (highest - 40) // 4
+
+    for i in range(4):
+        threshold = 41 + (interval * i)
+        grades.append(threshold)
+
+    return grades
