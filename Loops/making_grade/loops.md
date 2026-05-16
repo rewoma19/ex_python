@@ -239,3 +239,18 @@ Create the function **letter_grades(highest)** that takes the "highest" score on
 
     >>> letter_grades(highest=88)
     [41, 53, 65, 77]
+
+## Task 5
+
+### Matching Names to Scores
+
+You have a list of exam scores in descending order, and another list of student names also sorted in descending order by their exam scores. You would like to match each student name with their exam score and print out an overall class ranking.
+
+Create the function **student_ranking(student_scores, student_names)** with parameters **student_scores** and **student_names**. Match each student name on the student_names **list** with their score from the student_scores **list**. You can assume each argument list will be sorted from highest score(er) to lowest score(er). The function should return a **list** of strings with the format **<rank>. <student name>: <student score>**
+.
+
+    >>> student_scores = [100, 99, 90, 84, 66, 53, 47]
+    >>> student_names =  ['Joci', 'Sara','Kora','Jan','John','Bern', 'Fred']
+    >>> student_ranking(student_scores, student_names)
+    ...
+    ['1. Joci: 100', '2. Sara: 99', '3. Kora: 90', '4. Jan: 84', '5. John: 66', '6. Bern: 53', '7. Fred: 47']

@@ -80,3 +80,29 @@ def letter_grades(highest):
         grades.append(threshold)
 
     return grades
+
+def student_ranking(student_scores, student_names):
+    """Organize the student's rank, name, and grade information in descending order.
+
+    Parameters:
+        student_scores (list): Scores in descending order.
+        student_names (list[str]): Student names by exam score in descending order.
+
+    Returns:
+        list[str]:  Strings in format ["<rank>. <student name>: <score>"].
+    """
+
+    ranks = []
+
+    for i in range(len(student_scores)):
+        for j in range(len(student_names)):
+            if i == j:
+              pos = j + 1
+              combo = f"{pos}. {student_names[j]}: {student_scores[i]}" 
+              ranks.append(combo)
+
+    return ranks
+
+student_scores = [100, 99, 90, 84, 66, 53, 47]
+student_names =  ['Joci', 'Sara','Kora','Jan','John','Bern', 'Fred']
+print(student_ranking(student_scores, student_names))
