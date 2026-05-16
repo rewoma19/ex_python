@@ -71,3 +71,11 @@
 - [Instructions](/ListMethods/colossal_coaster/list_methods.md)
 
 - [Solution](/ListMethods/colossal_coaster/list_methods.py)
+
+## Loops
+
+### Making the Grade
+
+- [Instructions](/Loops/making_grade/loops.md)
+
+- [Solution](/Loops/making_grade/loops.py)
