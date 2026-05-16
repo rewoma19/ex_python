@@ -28,7 +28,7 @@ def count_failed_students(student_scores):
         int: The count of student scores at or below 40.
     """
 
-    others = list()
+    others = []
 
     for score in student_scores:
         if score <= 40:
@@ -75,8 +75,8 @@ def letter_grades(highest):
     grades = []
     interval = (highest - 40) // 4
 
-    for i in range(4):
-        threshold = 41 + (interval * i)
+    for num in range(4):
+        threshold = 41 + (interval * num)
         grades.append(threshold)
 
     return grades
@@ -94,11 +94,11 @@ def student_ranking(student_scores, student_names):
 
     ranks = []
 
-    for i in range(len(student_scores)):
-        for j in range(len(student_names)):
-            if i == j:
-              pos = j + 1
-              combo = f"{pos}. {student_names[j]}: {student_scores[i]}" 
+    for score_index, score in enumerate(student_scores):
+        for name_index, name in enumerate(student_names):
+            if score_index == name_index:
+              pos = name_index + 1
+              combo = f"{pos}. {name}: {score}" 
               ranks.append(combo)
 
     return ranks
@@ -106,3 +106,20 @@ def student_ranking(student_scores, student_names):
 student_scores = [100, 99, 90, 84, 66, 53, 47]
 student_names =  ['Joci', 'Sara','Kora','Jan','John','Bern', 'Fred']
 print(student_ranking(student_scores, student_names))
+
+def perfect_score(student_info):
+    """Create a list that contains the name and grade of the first student to make a perfect score on the exam.
+
+    Parameters:
+        student_info (list[list[str, int]]): List of [<student name>, <score>] lists.
+
+    Returns:
+        list: First `[<student name>, 100]` found OR `[]` if no student score of 100 is found.
+    """
+
+    for pair in student_info:
+        score = pair[1]
+        if score == 100:
+            return pair
+    
+    return []

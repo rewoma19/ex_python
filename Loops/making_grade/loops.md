@@ -254,3 +254,19 @@ Create the function **student_ranking(student_scores, student_names)** with para
     >>> student_ranking(student_scores, student_names)
     ...
     ['1. Joci: 100', '2. Sara: 99', '3. Kora: 90', '4. Jan: 84', '5. John: 66', '6. Bern: 53', '7. Fred: 47']
+
+## Task 6
+
+### A "Perfect" Score
+
+xAlthough a "perfect" score of 100 is rare on an exam, it is interesting to know if at least one student has achieved it.
+
+Create the function **perfect_score(student_info)** with parameter **student_info**. **student_info** is a **list** of lists containing the name and score of each student: **[["Charles", 90], ["Tony", 80]]**. The function should **return** the first **[<name>, <score>]** pair of the student who scored 100 on the exam.
+
+If no 100 scores are found in **student_info**, an empty list **[]** should be returned.
+
+    >>> perfect_score(student_info=[["Charles", 90], ["Tony", 80], ["Alex", 100]])
+    ["Alex", 100]
+
+    >>> perfect_score(student_info=[["Charles", 90], ["Tony", 80]])
+    []
