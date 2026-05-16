@@ -25,3 +25,14 @@ Create the function **count_failed_students(student_scores)** that takes a **lis
 
     >>> count_failed_students(student_scores=[90,40,55,70,30,25,80,95,38,40])
     5
+
+## Task 3
+
+### The "Best"
+
+The teacher you're assisting wants to find the group of students who've performed "the best" on this exam. What qualifies as "the best" fluctuates, so you need to find the student scores that are greater than or equal to the current threshold.
+
+Create the function **above_threshold(student_scores, threshold)** taking **student_scores** (a **list** of grades), and **threshold** (the "top score" threshold) as parameters. This function should return a **list** of all scores that are **>=** to **threshold**.
+
+    >>> above_threshold(student_scores=[90,40,55,70,30,68,70,75,83,96], threshold=75)
+    [90,75,83,96]
