@@ -78,3 +78,17 @@ Implement the **create_record()** function that takes a **(treasure, coordinate)
 
     >>> create_record(('Brass Spyglass', '4B'), ('Seaside Cottages', ('1', 'C'), 'blue'))
     "not a match"
+
+## Task 5
+
+### "Clean up" & make a report of all records
+
+Clean up the combined records from Azara and Rui so that there's only one set of coordinates per record. Make a report so they can see one list of everything they need to put on their maps. Implement the **clean_up()** function that takes a tuple of tuples (everything from both lists), looping through the outer tuple, dropping the unwanted coordinates from each inner tuple and adding each to a 'report'. Format and return the 'report' so that there is one cleaned record on each line.
+
+    >>> clean_up((('Brass Spyglass', '4B', 'Abandoned Lighthouse', ('4', 'B'), 'Blue'), ('Vintage Pirate Hat', '7E', 'Quiet Inlet (Island of Mystery)', ('7', 'E'), 'Orange'), ('Crystal Crab', '6A', 'Old Schooner', ('6', 'A'), 'Purple')))
+
+    """
+    ('Brass Spyglass', 'Abandoned Lighthouse', ('4', 'B'), 'Blue')\n
+    ('Vintage Pirate Hat', 'Quiet Inlet (Island of Mystery)', ('7', 'E'), 'Orange')\n
+    ('Crystal Crab', 'Old Schooner', ('6', 'A'), 'Purple')\n
+    """

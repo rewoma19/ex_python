@@ -58,3 +58,26 @@ def create_record(azara_record, rui_record):
         return azara_record + rui_record
     
     return "not a match"
+
+def clean_up(combined_record_group):
+    """Clean up a combined record group into a multi-line string of single records.
+
+    Parameters:
+        combined_record_group (tuple): Everything from both participants.
+
+    Returns:
+        str: Everything "cleaned", excess coordinates and information are removed.
+
+    Note:
+        The return statement is a multi-lined string with items separated by newlines.
+        (see HINTS.md for an example).
+
+    """
+
+    report = """"""
+
+    for record in combined_record_group:
+          cleaned_rec = record[:1] + record[2:]
+          report += f"{cleaned_rec}\n"
+        
+    return report
