@@ -79,3 +79,11 @@
 - [Instructions](/Loops/making_grade/loops.md)
 
 - [Solution](/Loops/making_grade/loops.py)
+
+## Tuples
+
+### Tisbury Treasure Hunt
+
+- [Instructions](/Tuples/treasure_hunt/tuples.md)
+
+- [Solution](/Tuples/treasure_hunt/tuples.py)

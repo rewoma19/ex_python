@@ -1,0 +1,47 @@
+# Instructions
+
+Azara and Rui are teammates competing in a pirate-themed treasure hunt. One has a list of treasures with map coordinates, the other a list of location names with map coordinates. They've also been given blank maps with a starting place marked YOU ARE HERE.
+
+Azara's List Rui's List
+| Treasure | Coordinates |
+|-------------------------------|-------------|
+| Amethyst Octopus | 1F |
+| Angry Monkey Figurine | 5B |
+| Antique Glass Fishnet Float | 3D |
+| Brass Spyglass | 4B |
+| Carved Wooden Elephant | 8C |
+| Crystal Crab | 6A |
+| Glass Starfish | 6D |
+| Model Ship in Large Bottle | 8A |
+| Pirate Flag | 7F |
+| Robot Parrot | 1C |
+| Scrimshawed Whale Tooth | 2A |
+| Silver Seahorse | 4E |
+| Vintage Pirate Hat | 7E |
+
+| Location Name                         | Coordinates | Quadrant |
+| ------------------------------------- | ----------- | -------- |
+| Seaside Cottages                      | ("1", "C")  | Blue     |
+| Aqua Lagoon (Island of Mystery)       | ("1", "F")  | Yellow   |
+| Deserted Docks                        | ("2", "A")  | Blue     |
+| Spiky Rocks                           | ("3", "D")  | Yellow   |
+| Abandoned Lighthouse                  | ("4", "B")  | Blue     |
+| Hidden Spring (Island of Mystery)     | ("4", "E")  | Yellow   |
+| Stormy Breakwater                     | ("5", "B")  | Purple   |
+| Old Schooner                          | ("6", "A")  | Purple   |
+| Tangled Seaweed Patch                 | ("6", "D")  | Orange   |
+| Quiet Inlet (Island of Mystery)       | ("7", "E")  | Orange   |
+| Windswept Hilltop (Island of Mystery) | ("7", "F")  | Orange   |
+| Harbor Managers Office                | ("8", "A")  | Purple   |
+| Foggy Seacave                         | ("8", "C")  | Purple   |
+
+But things are a bit disorganized: Azara's coordinates appear to be formatted and sorted differently from Rui's, and they have to keep looking from one list to the other to figure out which treasures go with which locations. Being budding pythonistas, they have come to you for help in writing a small program (a set of functions, really) to better organize their hunt information.
+
+## Task 1
+
+### Extract coordinates
+
+Implement the **get_coordinate()** function that takes a **(treasure, coordinate)** pair from Azara's list and returns only the extracted map coordinate.
+
+    >>> get_coordinate(('Scrimshawed Whale Tooth', '2A'))
+    2A
