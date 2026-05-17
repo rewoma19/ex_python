@@ -54,3 +54,15 @@ Implement the **convert_coordinate()** function that takes a coordinate in the f
 
     >>> convert_coordinate("2A")
     ("2", "A")
+
+## Task 3
+
+### Match coordinates
+
+Implement the **compare_records()** function that takes a **(treasure, coordinate)** pair and a **(location, coordinate, quadrant)** record and compares coordinates from each. Return **True** if the coordinates "match", and return **False** if they do not. Re-format coordinates as needed for accurate comparison.
+
+    > > > compare_records(('Brass Spyglass', '4B'), ('Seaside Cottages', ('1', 'C'), 'blue'))
+    > > > False
+
+    > > > compare_records(('Model Ship in Large Bottle', '8A'), ('Harbor Managers Office', ('8', 'A'), 'purple'))
+    > > > True
