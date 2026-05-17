@@ -66,3 +66,15 @@ Implement the **compare_records()** function that takes a **(treasure, coordinat
 
     > > > compare_records(('Model Ship in Large Bottle', '8A'), ('Harbor Managers Office', ('8', 'A'), 'purple'))
     > > > True
+
+## Task 4
+
+### Combine matched records
+
+Implement the **create_record()** function that takes a **(treasure, coordinate)** pair from Azara's list and a **(location, coordinate, quadrant)** record from Rui's list and returns **(treasure, coordinate, location, coordinate, quadrant)** if the coordinates match. If the coordinates do not match, return the string "not a match". Re-format the coordinate as needed for accurate comparison.
+
+    >>> create_record(('Brass Spyglass', '4B'), ('Abandoned Lighthouse', ('4', 'B'), 'Blue'))
+    ('Brass Spyglass', '4B', 'Abandoned Lighthouse', ('4', 'B'), 'Blue')
+
+    >>> create_record(('Brass Spyglass', '4B'), ('Seaside Cottages', ('1', 'C'), 'blue'))
+    "not a match"

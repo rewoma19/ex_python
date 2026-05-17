@@ -43,3 +43,18 @@ def compare_records(azara_record, rui_record):
 
     return formatted_first_coor == second_coor
 
+def create_record(azara_record, rui_record):
+    """Combine the two record types (if possible) and create a combined record group.
+
+    Parameters:
+        azara_record (tuple): A (treasure, coordinate) pair.
+        rui_record (tuple): A (location, coordinate, quadrant) trio.
+
+    Returns:
+        tuple or str: The combined record (if compatible), or the string "not a match" (if incompatible).
+    """
+
+    if compare_records(azara_record, rui_record):
+        return azara_record + rui_record
+    
+    return "not a match"
