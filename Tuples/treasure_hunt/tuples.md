@@ -45,3 +45,12 @@ Implement the **get_coordinate()** function that takes a **(treasure, coordinate
 
     >>> get_coordinate(('Scrimshawed Whale Tooth', '2A'))
     2A
+
+## Task 2
+
+### Format coordinates
+
+Implement the **convert_coordinate()** function that takes a coordinate in the format "2A" and returns a tuple in the format **("2", "A")**.
+
+    >>> convert_coordinate("2A")
+    ("2", "A")

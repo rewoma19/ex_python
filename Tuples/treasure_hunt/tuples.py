@@ -12,3 +12,15 @@ def get_coordinate(record):
     """
 
     return record[1]
+
+def convert_coordinate(coordinate):
+    """Split the given coordinate into tuple containing its individual components.
+
+    Parameters:
+        coordinate (str): A string map coordinate.
+
+    Returns:
+        tuple: The string coordinate split into its individual components.
+    """
+
+    return tuple(coordinate)
