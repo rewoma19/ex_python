@@ -36,3 +36,21 @@ def add_items(inventory, items):
           inventory[item] = 1
     
     return inventory
+
+def decrement_items(inventory, items):
+    """Decrement items in inventory using elements from the `items` list.
+
+    Parameters:
+        inventory (dict): Inventory dictionary.
+        items (list): List of items to decrement from the inventory.
+
+    Returns:
+        dict: Updated inventory with items decremented.
+    """
+
+    for item in items:
+        if item in inventory:
+          if inventory[item] != 0:
+              inventory[item] -= 1
+
+    return inventory

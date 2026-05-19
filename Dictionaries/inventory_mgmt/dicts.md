@@ -25,3 +25,17 @@ Implement the **add_items(<inventory dict>, <item list>)** function that adds a 
 
     >>> add_items({"coal":1}, ["wood", "iron", "coal", "wood"])
     {"coal":2, "wood":2, "iron":1}
+
+## Task 3
+
+### Decrement items from the inventory
+
+Implement the **decrement_items(<inventory dict>, <items list>)** function that takes a **list** of items. Your function should remove **1** from an item count for each time that item appears on the **list**:
+
+    >>> decrement_items({"coal":3, "diamond":1, "iron":5}, ["diamond", "coal", "iron", "iron"])
+    {"coal":2, "diamond":0, "iron":3}
+
+Item counts in the inventory should not be allowed to fall below 0. If the number of times an item appears on the input **list** exceeds the count available, the quantity listed for that item should remain at 0. Additional requests for removing counts should be ignored once the count falls to zero.
+
+    >>> decrement_items({"coal":2, "wood":1, "diamond":2}, ["coal", "coal", "wood", "wood", "diamond"])
+    {"coal":0, "wood":0, "diamond":1}
