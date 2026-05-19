@@ -39,3 +39,17 @@ Item counts in the inventory should not be allowed to fall below 0. If the numbe
 
     >>> decrement_items({"coal":2, "wood":1, "diamond":2}, ["coal", "coal", "wood", "wood", "diamond"])
     {"coal":0, "wood":0, "diamond":1}
+
+## Task 4
+
+### Remove an entry entirely from the inventory
+
+Implement the **remove_item(<inventory dict>, <item>)** function that removes an item and its count entirely from an inventory:
+
+    >>> remove_item({"coal":2, "wood":1, "diamond":2}, "coal")
+    {"wood":1, "diamond":2}
+
+If the item is not found in the inventory, the function should return the original inventory unchanged.
+
+    >>> remove_item({"coal":2, "wood":1, "diamond":2}, "gold")
+    {"coal":2, "wood":1, "diamond":2}

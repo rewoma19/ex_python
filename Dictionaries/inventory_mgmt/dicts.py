@@ -54,3 +54,19 @@ def decrement_items(inventory, items):
               inventory[item] -= 1
 
     return inventory
+
+def remove_item(inventory, item):
+    """Remove item from inventory if it matches `item` string.
+
+    Parameters:
+        inventory (dict): Inventory dictionary.
+        item (str): Item to remove from the inventory.
+
+    Returns:
+        dict: Updated inventory with item removed. Current inventory if item does not match.
+    """
+
+    if item in inventory:
+      inventory.pop(item)
+      
+    return inventory
