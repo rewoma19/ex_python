@@ -87,3 +87,9 @@
 - [Instructions](/Tuples/treasure_hunt/tuples.md)
 
 - [Solution](/Tuples/treasure_hunt/tuples.py)
+
+## Dictionaries
+
+- [Instructions](/Dictionaries/inventory_mgmt/dicts.md)
+
+- [Solution](/Dictionaries/inventory_mgmt/dicts.py)
