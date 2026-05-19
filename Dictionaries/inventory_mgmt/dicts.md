@@ -16,3 +16,12 @@ Implement the **create_inventory(<input list>)** function that creates an "inven
 
     >>> create_inventory(["coal", "wood", "wood", "diamond", "diamond", "diamond"])
     {"coal":1, "wood":2, "diamond":3}
+
+## Task 2
+
+### Add items from a list to an existing dictionary
+
+Implement the **add_items(<inventory dict>, <item list>)** function that adds a list of items to the passed-in inventory:
+
+    >>> add_items({"coal":1}, ["wood", "iron", "coal", "wood"])
+    {"coal":2, "wood":2, "iron":1}
