@@ -11,7 +11,7 @@ def create_inventory(items):
         dict: The inventory dictionary.
     """
 
-    inventory_dict = dict()
+    inventory_dict = {}
 
     for item in items:
         inventory_dict[item] = items.count(item)
@@ -68,5 +68,23 @@ def remove_item(inventory, item):
 
     if item in inventory:
       inventory.pop(item)
-      
+
     return inventory
+
+def list_inventory(inventory):
+    """Create a list containing only available (item_name, item_count > 0) pairs in inventory.
+
+    Parameters:
+        inventory (dict): An inventory dictionary.
+
+    Returns:
+        list[tuple]: List of key, value tuples from the inventory dictionary.
+    """
+
+    inventory_list = []
+
+    for item in inventory:
+        if inventory[item] != 0:
+            inventory_list.append((item, inventory[item]))
+    
+    return inventory_list

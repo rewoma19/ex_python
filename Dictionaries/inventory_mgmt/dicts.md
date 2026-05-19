@@ -53,3 +53,12 @@ If the item is not found in the inventory, the function should return the origin
 
     >>> remove_item({"coal":2, "wood":1, "diamond":2}, "gold")
     {"coal":2, "wood":1, "diamond":2}
+
+## Task 5
+
+### Return the entire content of the inventory
+
+Implement the **list_inventory(<inventory dict>)** function that takes an inventory and returns a list of **(item, quantity)** tuples. The list should only include the available items (with a quantity greater than zero):
+
+    >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7, "silver":0})
+    [('coal', 7), ('diamond', 2), ('iron', 7), ('wood', 11)]
