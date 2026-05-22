@@ -62,3 +62,25 @@ def sort_entries(cart):
 
     sorted_cart = sorted(cart.items())
     return dict(sorted_cart)
+
+def send_to_store(cart, aisle_mapping):
+    """Combine user's order to aisle and refrigeration information.
+
+    Parameters:
+        cart (dict): The user's shopping cart dictionary.
+        aisle_mapping (dict): The aisle and refrigeration information dictionary.
+
+    Returns:
+        dict: The fulfillment dictionary ready to send to store.
+    """
+
+    fulfillment_cart = {}
+
+    for item, qty in cart.items():
+        aisle, refridge = aisle_mapping[item]
+        fulfillment_cart[item] = [qty, aisle, refridge]
+
+    cart_items = fulfillment_cart.items()
+    sorted_cart = dict(sorted(cart_items, reverse= True))
+
+    return sorted_cart

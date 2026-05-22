@@ -75,3 +75,15 @@ Create the function **sort_entries(<cart>)** that takes a shopping cart/dictiona
 
     >>> sort_entries({'Banana': 3, 'Apple': 2, 'Orange': 1})
     {'Apple': 2, 'Banana':3, 'Orange': 1}
+
+## Task 5
+
+### Send User Shopping Cart to Store for Fulfillment
+
+The app needs to send a given user's cart to the store for fulfillment. However, the shoppers in the store need to know which store aisle the item can be found in and if the item needs refrigeration. So (rather arbitrarily) the "fulfillment cart" needs to be sorted in reverse alphabetical order with item quantities combined with location and refrigeration information.
+
+Create the function **send_to_store(<cart>, <aisle_mapping>)** that takes a user shopping cart and a dictionary that has store aisle number and a True/False for refrigeration needed for each item. The function should return a combined "fulfillment cart" that has (quantity, aisle, and refrigeration) for each item the customer is ordering. Items should appear in reverse alphabetical order.
+
+    >>> send_to_store({'Banana': 3, 'Apple': 2, 'Orange': 1, 'Milk': 2},
+    {'Banana': ['Aisle 5', False], 'Apple': ['Aisle 4', False], 'Orange': ['Aisle 4', False], 'Milk': ['Aisle 2', True]})
+    {'Orange': [1, 'Aisle 4', False], 'Milk': [2, 'Aisle 2', True], 'Banana': [3, 'Aisle 5', False], 'Apple': [2, 'Aisle 4', False]}
