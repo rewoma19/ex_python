@@ -34,3 +34,18 @@ def read_notes(notes):
     user_cart = dict.fromkeys(notes, 1)
 
     return user_cart
+
+def update_recipes(ideas, recipe_updates):
+    """Update the recipe ideas dictionary.
+
+    Parameters:
+        ideas (dict): The "recipe ideas" dict.
+        recipe_updates (iterable): Updates for the ideas section.
+
+    Returns:
+        dict: The updated "recipe ideas" dict.
+    """
+
+    ideas.update(recipe_updates)
+
+    return ideas
