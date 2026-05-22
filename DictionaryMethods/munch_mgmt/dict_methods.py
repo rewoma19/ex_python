@@ -1,0 +1,23 @@
+"""Functions to manage a users shopping cart items."""
+
+
+def add_item(current_cart, items_to_add):
+    """Add items to shopping cart.
+
+    Parameters:
+        current_cart (dict): The current shopping cart.
+        items_to_add (iterable): The items to add to the cart.
+
+    Returns:
+        dict: The updated user cart dictionary.
+    """
+
+    for new_item in set(items_to_add):
+        item_count = items_to_add.count(new_item)
+        if new_item not in current_cart:
+            current_cart[new_item] = item_count
+        else:
+            current_cart[new_item] += item_count
+
+    return current_cart
+

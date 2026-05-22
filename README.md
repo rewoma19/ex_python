@@ -93,3 +93,9 @@
 - [Instructions](/Dictionaries/inventory_mgmt/dicts.md)
 
 - [Solution](/Dictionaries/inventory_mgmt/dicts.py)
+
+## Dictionary Methods
+
+- [Instructions](/DictionaryMethods/munch_mgmt/dict_methods.md)
+
+- [Solution](/DictionaryMethods/munch_mgmt/dict_methods.py)
