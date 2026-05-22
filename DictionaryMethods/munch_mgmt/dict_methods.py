@@ -84,3 +84,25 @@ def send_to_store(cart, aisle_mapping):
     sorted_cart = dict(sorted(cart_items, reverse= True))
 
     return sorted_cart
+
+def update_store_inventory(fulfillment_cart, store_inventory):
+    """Update store inventory levels with user order.
+
+    Parameters:
+        fulfillment cart (dict): The fulfillment cart to send to store.
+        store_inventory (dict): The stores available inventory.
+
+    Returns:
+        dict: The store_inventory updated.
+    """
+
+    for item, (inventory_qty, *rest) in store_inventory.items():
+        if item in fulfillment_cart:
+          cart_qty = fulfillment_cart[item][0]
+
+          if (inventory_qty - cart_qty) > 0:
+            store_inventory[item][0] = inventory_qty - cart_qty
+          else:
+              store_inventory[item][0] = "Out of Stock"
+
+    return store_inventory

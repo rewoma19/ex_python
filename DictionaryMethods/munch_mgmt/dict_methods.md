@@ -87,3 +87,16 @@ Create the function **send_to_store(<cart>, <aisle_mapping>)** that takes a user
     >>> send_to_store({'Banana': 3, 'Apple': 2, 'Orange': 1, 'Milk': 2},
     {'Banana': ['Aisle 5', False], 'Apple': ['Aisle 4', False], 'Orange': ['Aisle 4', False], 'Milk': ['Aisle 2', True]})
     {'Orange': [1, 'Aisle 4', False], 'Milk': [2, 'Aisle 2', True], 'Banana': [3, 'Aisle 5', False], 'Apple': [2, 'Aisle 4', False]}
+
+## Task 6
+
+### Update the Store Inventory to Reflect what a User Has Ordered.
+
+The app can't just place customer orders endlessly. Eventually, the store is going to run out of various products. So your app MVP needs to update the store inventory every time a user sends their order to the store. Otherwise, customers will order products that aren't actually available.
+
+Create the function **update_store_inventory(<fulfillment_cart>, <store_inventory>)** that takes a "fulfillment cart" and a store inventory. The function should reduce the store inventory amounts by the number "ordered" in the "fulfillment cart" and then return the updated store inventory. Where a store item count falls to 0, the count should be replaced by the message 'Out of Stock'.
+
+    >>> update_store_inventory({'Orange': [1, 'Aisle 4', False], 'Milk': [2, 'Aisle 2', True], 'Banana': [3, 'Aisle 5', False], 'Apple': [2, 'Aisle 4', False]},
+    {'Banana': [15, 'Aisle 5', False], 'Apple': [12, 'Aisle 4', False], 'Orange': [1, 'Aisle 4', False], 'Milk': [4, 'Aisle 2', True]})
+
+    {'Banana': [12, 'Aisle 5', False], 'Apple': [10, 'Aisle 4', False], 'Orange': ['Out of Stock', 'Aisle 4', False], 'Milk': [2, 'Aisle 2', True]}
