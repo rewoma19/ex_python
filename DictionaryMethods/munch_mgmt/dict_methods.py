@@ -49,3 +49,16 @@ def update_recipes(ideas, recipe_updates):
     ideas.update(recipe_updates)
 
     return ideas
+
+def sort_entries(cart):
+    """Sort a user's shopping cart in alphabetical order.
+
+    Parameters:
+        cart (dict): A user's shopping cart dictionary.
+
+    Returns:
+        dict: A user's shopping cart sorted in alphabetical order.
+    """
+
+    sorted_cart = sorted(cart.items())
+    return dict(sorted_cart)

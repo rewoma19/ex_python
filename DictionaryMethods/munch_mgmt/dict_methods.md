@@ -64,3 +64,14 @@ Create the function **update_recipes(<ideas>, <recipe_updates>)** that takes an 
     'Raspberry Pie': {'Raspberry': 3, 'Orange': 1, 'Pie Crust': 1, 'Cream Custard': 1, 'Whipped Cream': 2},
     'Pasta Primavera': {'Eggs': 1, 'Mixed Veggies': 2, 'Parmesan': 2, 'Milk': 1, 'Spinach': 1, 'Bread Crumbs': 1},
     'Blueberry Crumble': {'Blueberries': 2, 'Whipped Creme': 2, 'Granola Topping': 2, 'Yogurt': 3}}
+
+## Task 4
+
+### Sort the Items in the User Cart
+
+Once a user has started a cart, the app allows them to sort their items alphabetically. This makes things easier to find, and helps when there are data-entry errors like having 'potatoes' and 'Potato' in the database.
+
+Create the function **sort_entries(<cart>)** that takes a shopping cart/dictionary as an argument and returns a new, alphabetically sorted one.
+
+    >>> sort_entries({'Banana': 3, 'Apple': 2, 'Orange': 1})
+    {'Apple': 2, 'Banana':3, 'Orange': 1}
