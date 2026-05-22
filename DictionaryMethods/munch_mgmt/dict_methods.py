@@ -21,3 +21,16 @@ def add_item(current_cart, items_to_add):
 
     return current_cart
 
+def read_notes(notes):
+    """Create user cart from an iterable notes entry.
+
+    Parameters:
+        notes (iterable): Group of items to add to cart.
+
+    Returns:
+        dict: A user shopping cart dictionary.
+    """
+
+    user_cart = dict.fromkeys(notes, 1)
+
+    return user_cart
