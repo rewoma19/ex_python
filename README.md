@@ -99,3 +99,9 @@
 - [Instructions](/DictionaryMethods/munch_mgmt/dict_methods.md)
 
 - [Solution](/DictionaryMethods/munch_mgmt/dict_methods.py)
+
+## Sets
+
+- [Instructions](/Sets/cater_waiter/sets.md)
+
+- [Solution](/Sets/cater_waiter/sets.py)
