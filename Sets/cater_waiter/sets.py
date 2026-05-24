@@ -118,3 +118,22 @@ def compile_ingredients(dishes):
 
     return master_list
 
+def separate_appetizers(dishes, appetizers):
+    """Determine which `dishes` are designated `appetizers` and remove them.
+
+    Parameters:
+        dishes (list): Group of dish names.
+        appetizers (list): Group of appetizer names.
+
+    Returns:
+        list: Group of dish names that do not appear on appetizer list.
+
+    The function should return the list of dish names with appetizer names removed.
+    Either list could contain duplicates and may require de-duping.
+    """
+
+    set_of_dishes = set(dishes)
+    set_of_appetizers = set(appetizers)
+
+    separated_set = set_of_dishes.difference(set_of_appetizers)
+    return list(separated_set)

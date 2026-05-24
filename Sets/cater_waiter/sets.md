@@ -85,3 +85,24 @@ Implement the **compile_ingredients(<dishes>)** function that takes a **list** o
     >>> compile_ingredients(dishes)
     ...
     {'arugula', 'brown sugar', 'honeydew', 'coconut water', 'english cucumber', 'balsamic vinegar', 'mint leaves', 'pears', 'pork tenderloin', 'ginger', 'blue cheese', 'soy sauce', 'sesame seeds', 'black pepper', 'garlic', 'lime juice', 'corn starch', 'pine nuts', 'lemon juice', 'onions', 'salt', 'tofu'}
+
+## Task 6
+
+### Pull out Appetizers for Passing on Trays
+
+The hosts have given you a list of dishes they'd like prepped as "bite-sized" appetizers to be served on trays. You need to pull these from the main list of dishes being prepared as larger servings.
+
+Implement the **separate_appetizers(<dishes>, <appetizers>)** function that takes a **list** of dish names and a **list** of appetizer names. The function should return the **list** of dish names with appetizer names removed. Either the **<dishes>** or **<appetizers>** **list** could contain duplicates and may require de-duping.
+
+    dishes = ['Avocado Deviled Eggs','Flank Steak with Chimichurri and Asparagus', 'Kingfish Lettuce Cups',
+                'Grilled Flank Steak with Caesar Salad','Vegetarian Khoresh Bademjan','Avocado Deviled Eggs',
+                'Barley Risotto','Kingfish Lettuce Cups']
+
+    appetizers = ['Kingfish Lettuce Cups','Avocado Deviled Eggs','Satay Steak Skewers',
+                  'Dahi Puri with Black Chickpeas','Avocado Deviled Eggs','Asparagus Puffs',
+                  'Asparagus Puffs']
+
+    >>> separate_appetizers(dishes, appetizers)
+    ...
+    ['Vegetarian Khoresh Bademjan', 'Barley Risotto', 'Flank Steak with Chimichurri and Asparagus',
+    'Grilled Flank Steak with Caesar Salad']
