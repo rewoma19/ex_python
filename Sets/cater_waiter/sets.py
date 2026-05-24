@@ -137,3 +137,25 @@ def separate_appetizers(dishes, appetizers):
 
     separated_set = set_of_dishes.difference(set_of_appetizers)
     return list(separated_set)
+
+def singleton_ingredients(dishes, intersection):
+    """Find singleton ingredients within the group of dishes (ingredients that only appear once across dishes).
+
+    Parameters:
+        dishes (list): Group of ingredient sets.
+        intersection (set): Can be one of `<CATEGORY>_INTERSECTIONS` constants imported from `sets_categories_data.py`.
+
+    Returns:
+        set: Containing singleton ingredients.
+
+    Each dish is represented by a `set` of its ingredients.
+
+    Each `<CATEGORY>_INTERSECTIONS` is an `intersection` of all dishes in the category. `<CATEGORY>` can be any one of:
+        (VEGAN, VEGETARIAN, PALEO, KETO, or OMNIVORE).
+
+    The function should return a `set` of ingredients that only appear in a single dish.
+    """
+
+    all_ings = compile_ingredients(dishes)
+
+    return all_ings - intersection

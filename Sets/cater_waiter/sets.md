@@ -106,3 +106,17 @@ Implement the **separate_appetizers(<dishes>, <appetizers>)** function that take
     ...
     ['Vegetarian Khoresh Bademjan', 'Barley Risotto', 'Flank Steak with Chimichurri and Asparagus',
     'Grilled Flank Steak with Caesar Salad']
+
+## Task 7
+
+### Find Ingredients Used in ONLY One Recipe
+
+Within each category (Vegan, Vegetarian, Paleo, Keto, Omnivore), you're going to pull out ingredients that appear in only one dish. These "singleton" ingredients will be assigned a special shopper to ensure they're not forgotten in the rush to get everything else done.
+
+Implement the **singleton_ingredients(<dishes>, <INTERSECTIONS>)** function that takes a **list** of dishes and a **<CATEGORY>\_INTERSECTIONS** constant for the same category. Each dish is represented by a set of its ingredients. Each **<CATEGORY>\_INTERSECTIONS** is a **set** of ingredients that appear in more than one dish in the category. Using set operations, your function should return a **set** of "singleton" ingredients (ingredients appearing in only one dish in the category).
+
+    from sets_categories_data import example_dishes, EXAMPLE_INTERSECTION
+
+    >>> singleton_ingredients(example_dishes, EXAMPLE_INTERSECTION)
+    ...
+    {'garlic powder', 'sunflower oil', 'mixed herbs', 'cornstarch', 'celeriac', 'honey', 'mushrooms', 'bell pepper', 'rosemary', 'parsley', 'lemon', 'yeast', 'vegetable oil', 'vegetable stock', 'silken tofu', 'tofu', 'cashews', 'lemon zest', 'smoked tofu', 'spaghetti', 'ginger', 'breadcrumbs', 'tomatoes', 'barley malt', 'red pepper flakes', 'oregano', 'red onion', 'fresh basil'}
