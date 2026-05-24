@@ -68,3 +68,20 @@ Implement the **tag_special_ingredients(<dish>)** function that takes a **tuple*
     >>> tag_special_ingredients(('Arugula and Roasted Pork Salad', ['pork tenderloin', 'arugula', 'pears', 'blue cheese', 'pine nuts', 'balsamic vinegar', 'onions', 'black pepper']))
     ...
     ('Arugula and Roasted Pork Salad', {'pork tenderloin', 'blue cheese', 'pine nuts', 'onions'})
+
+## Task 5
+
+### Compile a "Master List" of Ingredients
+
+In preparation for ordering and shopping, you'll need to compile a "master list" of ingredients for everything on the menu (quantities to be filled in later).
+
+Implement the **compile_ingredients(<dishes>)** function that takes a **list** of dishes and returns a set of all ingredients in all listed dishes. Each individual dish is represented by its **set** of ingredients.
+
+    dishes = [ {'tofu', 'soy sauce', 'ginger', 'corn starch', 'garlic', 'brown sugar', 'sesame seeds', 'lemon juice'},
+              {'pork tenderloin', 'arugula', 'pears', 'blue cheese', 'pine nuts',
+              'balsamic vinegar', 'onions', 'black pepper'},
+              {'honeydew', 'coconut water', 'mint leaves', 'lime juice', 'salt', 'english cucumber'}]
+
+    >>> compile_ingredients(dishes)
+    ...
+    {'arugula', 'brown sugar', 'honeydew', 'coconut water', 'english cucumber', 'balsamic vinegar', 'mint leaves', 'pears', 'pork tenderloin', 'ginger', 'blue cheese', 'soy sauce', 'sesame seeds', 'black pepper', 'garlic', 'lime juice', 'corn starch', 'pine nuts', 'lemon juice', 'onions', 'salt', 'tofu'}

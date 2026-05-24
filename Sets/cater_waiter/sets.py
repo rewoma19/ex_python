@@ -98,3 +98,23 @@ def tag_special_ingredients(dish):
     dish_specials = set(dish_ingredients).intersection(SPECIAL_INGREDIENTS)
 
     return (dish_name, dish_specials)
+
+def compile_ingredients(dishes):
+    """Create a master list of ingredients.
+
+    Parameters:
+        dishes (list): Dish ingredient sets.
+
+    Returns:
+        set: Ingredients compiled from `dishes`.
+
+    This function should return a `set` of all ingredients from all listed dishes.
+    """
+
+    master_list = set()
+
+    for dish in dishes:
+        master_list |= dish
+
+    return master_list
+
