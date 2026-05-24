@@ -49,3 +49,33 @@ def check_drinks(drink_name, drink_ingredients):
         drink_ctg = "Cocktail"
 
     return f"{drink_name} {drink_ctg}"
+
+def categorize_dish(dish_name, dish_ingredients):
+    """Categorize `dish_name` based on `dish_ingredients`.
+
+    Parameters:
+        dish_name (str): The dish to be categorized.
+        dish_ingredients (set): The ingredients for the dish.
+
+    Returns:
+        str: The dish name appended with ": <CATEGORY>".
+
+    This function should return a string with the `dish name: <CATEGORY>` (which meal category the dish belongs to).
+    `<CATEGORY>` can be any one of  (VEGAN, VEGETARIAN, PALEO, KETO, or OMNIVORE).
+    All dishes will "fit" into one of the categories imported from `sets_categories_data.py`
+    """
+
+    dish_ctg = ""
+
+    if dish_ingredients.issubset(VEGAN):
+        dish_ctg = "VEGAN"
+    elif dish_ingredients.issubset(VEGETARIAN):
+        dish_ctg = "VEGETARIAN"
+    elif dish_ingredients.issubset(PALEO):
+        dish_ctg = "PALEO"
+    elif dish_ingredients.issubset(KETO):
+        dish_ctg = "KETO"
+    else:
+        dish_ctg = "OMNIVORE"
+
+    return f"{dish_name}: {dish_ctg}"

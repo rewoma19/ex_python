@@ -31,3 +31,22 @@ Implement the **check_drinks(<drink_name>, <drink_ingredients>)** function that 
     >>> check_drinks('Shirley Tonic', ['cinnamon stick', 'scotch', 'whole cloves', 'ginger', 'pomegranate juice', 'sugar', 'club soda'])
     ...
     'Shirley Tonic Cocktail'
+
+## Task 3
+
+### Categorize Dishes
+
+The guest list includes diners with different dietary needs, and your staff will need to separate the dishes into Vegan, Vegetarian, Paleo, Keto, and Omnivore. A dish belongs to a category only if all of its ingredients appear in the category's ingredient set.
+
+Implement the **categorize_dish(<dish_name>, <dish_ingredients>)** function that takes a dish name and a **set** of that dish's ingredients. The function should return a string with the **dish name: <CATEGORY>** (which meal category the dish belongs to). All dishes given will "fit" into one of the categories imported from **sets_categories_data.py** (VEGAN, VEGETARIAN, PALEO, KETO, or OMNIVORE).
+
+    >>> from sets_categories_data import VEGAN, VEGETARIAN, PALEO, KETO, OMNIVORE
+
+
+    >>> categorize_dish('Sticky Lemon Tofu', {'tofu', 'soy sauce', 'salt', 'black pepper', 'cornstarch', 'vegetable oil', 'garlic', 'ginger', 'water', 'vegetable stock', 'lemon juice', 'lemon zest', 'sugar'})
+    ...
+    'Sticky Lemon Tofu: VEGAN'
+
+    >>> categorize_dish('Shrimp Bacon and Crispy Chickpea Tacos with Salsa de Guacamole', {'shrimp', 'bacon', 'avocado', 'chickpeas', 'fresh tortillas', 'sea salt', 'guajillo chile', 'slivered almonds', 'olive oil', 'butter', 'black pepper', 'garlic', 'onion'})
+    ...
+    'Shrimp Bacon and Crispy Chickpea Tacos with Salsa de Guacamole: OMNIVORE'
