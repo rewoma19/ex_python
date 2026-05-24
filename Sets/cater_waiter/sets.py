@@ -25,3 +25,27 @@ def clean_ingredients(dish_name, dish_ingredients):
     """
 
     return (dish_name, set(dish_ingredients))
+
+def check_drinks(drink_name, drink_ingredients):
+    """Append "Cocktail" (alcohol)  or "Mocktail" (no alcohol) to `drink_name`, based on `drink_ingredients`.
+
+    Parameters:
+        drink_name (str): Name of the drink.
+        drink_ingredients (list): Ingredients in the drink.
+
+    Returns:
+        str: `drink_name` appended with "Mocktail" or "Cocktail".
+
+    The function should return the name of the drink followed by "Mocktail" (non-alcoholic) and drink
+    name followed by "Cocktail" (includes alcohol).
+
+    """
+
+    drink_ctg = ""
+
+    if ALCOHOLS.isdisjoint(drink_ingredients):
+        drink_ctg = "Mocktail"
+    else:
+        drink_ctg = "Cocktail"
+
+    return f"{drink_name} {drink_ctg}"
