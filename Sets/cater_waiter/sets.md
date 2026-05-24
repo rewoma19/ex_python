@@ -50,3 +50,21 @@ Implement the **categorize_dish(<dish_name>, <dish_ingredients>)** function that
     >>> categorize_dish('Shrimp Bacon and Crispy Chickpea Tacos with Salsa de Guacamole', {'shrimp', 'bacon', 'avocado', 'chickpeas', 'fresh tortillas', 'sea salt', 'guajillo chile', 'slivered almonds', 'olive oil', 'butter', 'black pepper', 'garlic', 'onion'})
     ...
     'Shrimp Bacon and Crispy Chickpea Tacos with Salsa de Guacamole: OMNIVORE'
+
+## Task 4
+
+### Label Allergens and Restricted Foods
+
+Some guests have allergies and additional dietary restrictions. These ingredients need to be tagged/annotated for each dish so that they don't cause issues.
+
+Implement the **tag_special_ingredients(<dish>)** function that takes a **tuple** with the dish name in the first position, and a **list** or **set** of ingredients for that dish in the second position. Return the dish name followed by the set of ingredients that require a special note on the dish description. Dish ingredients inside a **list** may or may not have duplicates. For the purposes of this exercise, all allergens or special ingredients that need to be labeled are in the SPECIAL_INGREDIENTS constant imported from **sets_categories_data.py**
+
+    >>> from sets_categories_data import SPECIAL_INGREDIENTS
+
+    >>> tag_special_ingredients(('Ginger Glazed Tofu Cutlets', ['tofu', 'soy sauce', 'ginger', 'corn starch', 'garlic', 'brown sugar', 'sesame seeds', 'lemon juice']))
+    ...
+    ('Ginger Glazed Tofu Cutlets', {'garlic','soy sauce','tofu'})
+
+    >>> tag_special_ingredients(('Arugula and Roasted Pork Salad', ['pork tenderloin', 'arugula', 'pears', 'blue cheese', 'pine nuts', 'balsamic vinegar', 'onions', 'black pepper']))
+    ...
+    ('Arugula and Roasted Pork Salad', {'pork tenderloin', 'blue cheese', 'pine nuts', 'onions'})

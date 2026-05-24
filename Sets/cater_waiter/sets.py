@@ -79,3 +79,22 @@ def categorize_dish(dish_name, dish_ingredients):
         dish_ctg = "OMNIVORE"
 
     return f"{dish_name}: {dish_ctg}"
+
+def tag_special_ingredients(dish):
+    """Compare `dish` ingredients to `SPECIAL_INGREDIENTS`.
+
+    Parameters:
+        dish (tuple): (dish name, list of dish ingredients).
+
+    Returns:
+        tuple: Containing (dish name, dish special ingredients).
+
+    Return the dish name followed by the `set` of ingredients that require a special note on the dish description.
+    For the purposes of this exercise, all allergens or special ingredients that need to be tracked are in the
+    SPECIAL_INGREDIENTS constant imported from `sets_categories_data.py`.
+    """
+
+    dish_name, dish_ingredients = dish
+    dish_specials = set(dish_ingredients).intersection(SPECIAL_INGREDIENTS)
+
+    return (dish_name, dish_specials)
