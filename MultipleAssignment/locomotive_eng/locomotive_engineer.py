@@ -41,3 +41,15 @@ def add_missing_stops(route, **stops):
     """
     route["stops"] = list(stops.values())
     return route
+
+def extend_route_information(route, more_route_information):
+    """Extend route information with more_route_information.
+
+    Parameters:
+        route (dict): The route information.
+        more_route_information (dict): The extra route information.
+
+    Returns:
+        dict: The extended route information.
+    """
+    return {**route, **more_route_information}

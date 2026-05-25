@@ -49,3 +49,19 @@ Implement a function **add_missing_stops()** that accepts a routing **dict** fol
     stop_4="Jacksonville", stop_5="Orlando")
 
     {"from": "New York", "to": "Miami", "stops": ["Washington, DC", "Charlotte", "Atlanta", "Jacksonville", "Orlando"]}
+
+## Task 4
+
+### Extend routing information
+
+Linus has been working on the routing program and has noticed that certain routes are missing some important details. Initial route information has been constructed as a **dict** and your friend would like you to update that **dict** with whatever might be missing. Every route in the system requires slightly different details, so Linus would really prefer a generic solution.
+
+Implement a function called **extend_route_information()** that accepts two **dicts**. The first **dict** contains the origin and destination cities the train route runs between.
+
+The second **dict** contains other routing details such as train speed, length, or temperature. The function should return a consolidated **dict** with all routing information.
+
+    Note
+    The second dict can contain different/more properties than the ones shown in the example.
+
+    >>> extend_route_information({"from": "Berlin", "to": "Hamburg"}, {"length": "100", "speed": "50"})
+    {"from": "Berlin", "to": "Hamburg", "length": "100", "speed": "50"}
