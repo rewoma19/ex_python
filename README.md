@@ -105,3 +105,9 @@
 - [Instructions](/Sets/cater_waiter/sets.md)
 
 - [Solution](/Sets/cater_waiter/sets.py)
+
+## Unpacking and Multiple Assignment
+
+- [Instructions](/MultipleAssignment/locomotive_eng/locomotive_engineer.md)
+
+- [Solution](/MultipleAssignment/locomotive_eng/locomotive_engineer.py)
