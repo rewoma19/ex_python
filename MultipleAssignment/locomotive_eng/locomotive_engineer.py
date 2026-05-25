@@ -28,3 +28,16 @@ def fix_list_of_wagons(each_wagons_id, missing_wagons):
     fixed_list = [1, *missing_wagons, *rest, first_wagon, second_wagon]
 
     return fixed_list
+
+def add_missing_stops(route, **stops):
+    """Add missing stops to route dict.
+
+    Parameters:
+        route (dict): The dict of routing information.
+        (dict): An arbitrary number of stops.
+
+    Returns:
+        dict: The updated route dictionary.
+    """
+    route["stops"] = list(stops.values())
+    return route

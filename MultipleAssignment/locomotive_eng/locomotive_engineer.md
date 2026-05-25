@@ -33,3 +33,19 @@ Implement a function **fix_list_of_wagons()** that takes two **lists** containin
 
     >>> fix_list_of_wagons([2, 5, 1, 7, 4, 12, 6, 3, 13], [3, 17, 6, 15])
     [1, 3, 17, 6, 15, 7, 4, 12, 6, 3, 13, 2, 5]
+
+## Task 3
+
+### Add missing stops
+
+Now that all the wagon data is correct, Linus would like you to update the system's routing information. Along a transport route, a train might make stops at a few different stations to pick up and/or drop off cargo. Each journey could have a different number of these intermediary delivery points. Your friend would like you to update the systems routing **dict** with any missing/additional delivery information.
+
+Implement a function **add_missing_stops()** that accepts a routing **dict** followed by a variable number of keyword arguments. These arguments could be in the form of a dict holding one or more stops, or any number of **stop_number=city** keyword pairs. Your function should then return the routing **dict** updated with an additional **key** that holds a **list** of all the added stops in order.
+
+    > > > add_missing_stops({"from": "New York", "to": "Miami"},
+
+    stop_1="Washington, DC", stop_2="Charlotte",
+    stop_3="Atlanta",
+    stop_4="Jacksonville", stop_5="Orlando")
+
+    {"from": "New York", "to": "Miami", "stops": ["Washington, DC", "Charlotte", "Atlanta", "Jacksonville", "Orlando"]}
