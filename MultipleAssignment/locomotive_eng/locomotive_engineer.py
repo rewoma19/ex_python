@@ -53,3 +53,20 @@ def extend_route_information(route, more_route_information):
         dict: The extended route information.
     """
     return {**route, **more_route_information}
+
+def fix_wagon_depot(wagons_rows):
+    """Fix the list of rows of wagons.
+
+    Parameters:
+        wagons_rows (list[list[tuple]]): The list of rows of wagons.
+
+    Returns:
+        list[list[tuple]]: the list of rows of wagons.
+    """
+
+    transposed = []
+
+    for row in zip(*wagons_rows):
+        transposed.append(list(row))
+    
+    return transposed
