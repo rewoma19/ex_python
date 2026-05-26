@@ -111,3 +111,9 @@
 - [Instructions](/MultipleAssignment/locomotive_eng/locomotive_engineer.md)
 
 - [Solution](/MultipleAssignment/locomotive_eng/locomotive_engineer.py)
+
+## Classes
+
+- [Instructions](/Classes/alien_game/classes.md)
+
+- [Solution](/Classes/alien_game/classes.py)
