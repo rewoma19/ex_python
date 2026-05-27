@@ -19,3 +19,20 @@ Define the Alien class with a constructor that accepts two parameters **<x_coord
     3
 
 Now, each alien should be able to internally track its own position and health.
+
+## Task 2
+
+### The hit Method
+
+Ellen would like the Alien **class** to have a **hit** method that decrements the health of an alien object by 1 when called. This way, she can simply call **<alien>.hit()** instead of having to manually change an alien's health. It is up to you if **hit()** takes healths points to or below zero.
+
+    >>> alien = Alien(0, 0)
+
+    # Initialized health value.
+    >>> alien.health
+    3
+
+    # Decrements health by 1 point.
+    >>> alien.hit()
+    >>> alien.health
+    2
