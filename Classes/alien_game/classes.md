@@ -52,3 +52,15 @@ You realize that if the health keeps decreasing, at some point it will probably 
     0
     >>> alien.is_alive()
     False
+
+## Task 4
+
+### The teleport Method
+
+In Ellen's game, the aliens have the ability to teleport! You will need to write a **teleport** method that takes new **x_coordinate** and **y_coordinate** values, and changes the alien's coordinates accordingly.
+
+    >>> alien.teleport(5, -4)
+    >>> alien.x_coordinate
+    5
+    >>> alien.y_coordinate
+    -4
