@@ -36,3 +36,19 @@ Ellen would like the Alien **class** to have a **hit** method that decrements th
     >>> alien.hit()
     >>> alien.health
     2
+
+## Task 3
+
+### The is_alive Method
+
+You realize that if the health keeps decreasing, at some point it will probably hit 0 (or even less!). It would be a good idea to add an **is_alive** method that Ellen can quickly call to check if the alien is... well... alive. 😉 **<alien>.is_alive()** should return a boolean.
+
+    >>> alien.health
+    1
+    >>> alien.is_alive()
+    True
+    >>> alien.hit()
+    >>> alien.health
+    0
+    >>> alien.is_alive()
+    False
