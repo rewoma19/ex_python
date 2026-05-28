@@ -93,3 +93,19 @@ For example:
     # Accessing the variable from the class directly
     >>> Alien.total_aliens_created
     2
+
+## Task 7
+
+### Creating a List of Aliens
+
+Ellen loves what you've done so far, but she has one more favor to ask. She would like a standalone (outside the **Alien()** class) function that creates a **list** of **Alien()** objects, given a list of positions (as **tuples**).
+
+For example:
+
+    >>> alien_start_positions = [(4, 7), (-1, 0)]
+    >>> aliens = new_aliens_collection(alien_start_positions)
+    ...
+    >>> for alien in aliens:
+    ...     print(alien.x_coordinate, alien.y_coordinate)
+    (4, 7)
+    (-1, 0)
