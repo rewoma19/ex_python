@@ -73,3 +73,23 @@ Obviously, if the aliens can be hit by something, then they need to be able to d
 
     >>> alien.collision_detection(other_object)
     >>>
+
+## Task 6
+
+### Alien Counter
+
+Ellen has come back with a new request for you. She wants to keep track of how many aliens have been created over the game's lifetime. She says that it's got something to do with the scoring system.
+
+For example:
+
+    >>> alien_one = Alien(5, 1)
+    >>> alien_one.total_aliens_created
+    1
+    >>> alien_two = Alien(3, 0)
+    >>> alien_two.total_aliens_created
+    2
+    >>> alien_one.total_aliens_created
+    2
+    # Accessing the variable from the class directly
+    >>> Alien.total_aliens_created
+    2
